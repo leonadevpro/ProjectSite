@@ -1,0 +1,20 @@
+If creating a new repositor:
+    git init
+    git add <file_name> || Adds a changed file to the "cache" to be pushed.
+    >>what does "git branch -M main" do?
+    git remote add origin <url> || Adds the source of a project (e.g. the location on the github website) [https://github.com/leonadevpro/ProjectSite.git]
+    git push -u origin main || adds the changes to repo
+
+Updating a repo:
+    git add <file_name> || Adds a changed file to be pushed.
+    git push -u origin main 
+
+Questions:
+    How does git CLI have necessary information for where to push the changes to?
+        Stored in hidden .git file. Will contain repo location and relevant changes.
+
+    What do additions to "push" change? (e.g. -u origin main)
+        I *think* this makes the commit the most recent "upstream" change. If it were forked by someone else they would be downloaded the "upstream" change.
+        Check git push --help for more info.
+            
+
